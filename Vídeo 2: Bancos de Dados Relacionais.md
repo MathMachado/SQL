@@ -42,10 +42,12 @@
      - `ID` (INT)
      - `Nome` (VARCHAR)
      - `Categoria` (VARCHAR)
-     - `Preço` (DECIMAL)
+     - `Preco` (DECIMAL)
      - `Quantidade` (INT)
    - **Registro Exemplo:**
      - (1, "Caneta", "Escritório", 1.50, 100)
+    
+  Por favor, vá até o Databricks, Notebook ´Video_2.sql´ e tenha sua primeira experiência com o SQL.
 
 2. **Tabela Fictícia: Funcionários**
    - **Colunas:**
