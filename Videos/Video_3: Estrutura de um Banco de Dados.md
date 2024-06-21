@@ -67,7 +67,26 @@
   - `ID_Cliente` (INT)
   - `Data_Empréstimo` (DATE)
   - `Data_Devolução` (DATE)
- 
+
+
+ O Databricks Community Edition não oferece suporte ao Unity Catalog, que é uma funcionalidade disponível apenas nas edições pagas do Databricks. Portanto, você não conseguirá usar o Unity Catalog para criar chaves estrangeiras diretamente no Community Edition.
+
+Como alternativa, podemos demonstrar os conceitos de chave primária, chave estrangeira e índices sem usar o Unity Catalog, explicando-os teoricamente e criando as tabelas sem as restrições explícitas de integridade referencial. Abaixo está um exemplo de como você pode fazer isso no Databricks Community Edition:
+
+### Explicação Teórica
+
+1. **Chave Primária (Primary Key):**
+   - **Tabela "Livros":** A coluna `ID` serve como identificador único para cada livro.
+   - **Tabela "Autores":** A coluna `ID` serve como identificador único para cada autor.
+   - **Tabela "Emprestimos":** A coluna `ID` serve como identificador único para cada empréstimo.
+
+2. **Chave Estrangeira (Foreign Key) (Conceitual):**
+   - **Tabela "Emprestimos":** A coluna `ID_Livro` faz referência à coluna `ID` da tabela "Livros". Conceitualmente, isso garantiria que todos os valores em `ID_Livro` correspondam a valores existentes na coluna `ID` da tabela "Livros".
+
+3. **Índices (Indexes) (Conceitual):**
+   - **Tabela "Emprestimos":** Um índice na coluna `ID_Livro` melhoraria a performance das consultas que envolvem essa coluna.
+
+Embora você não possa implementar as restrições de chave estrangeira e índices diretamente no Databricks Community Edition, podemos aprender os conceitos.
 
 ## Exemplo 2: Vendas
 
