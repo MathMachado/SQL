@@ -43,16 +43,7 @@
     - **Relacionamentos:**
       - Um-para-Muitos entre Clientes e Pedidos (um cliente pode fazer muitos pedidos).
       - Muitos-para-Muitos entre Pedidos e Produtos através da tabela Itens_Pedido (um pedido pode conter muitos produtos e um produto pode aparecer em muitos pedidos).
-
-# Recursos Visuais
-- **Slides de Apresentação:**
-  - Definições e exemplos de componentes principais de um banco de dados.
-  - Exemplos de relacionamentos entre tabelas.
-  - Representações visuais de esquemas de banco de dados.
-
-- **Demonstrações:**
-  - Diagramas de esquemas de banco de dados desenhados em ferramentas como Lucidchart, draw.io ou até mesmo à mão.
-
+      
 # Exemplos de Esquema de Banco de Dados:
 
 ## Exemplo 1: Biblioteca
@@ -76,12 +67,7 @@
   - `ID_Cliente` (INT)
   - `Data_Empréstimo` (DATE)
   - `Data_Devolução` (DATE)
-
-- **Clientes:**
-  - `ID` (INT)
-  - `Nome` (VARCHAR)
-  - `Email` (VARCHAR)
-  - `Telefone` (VARCHAR)
+ 
 
 ## Exemplo 2: Vendas
 
