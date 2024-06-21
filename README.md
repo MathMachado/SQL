@@ -5,8 +5,6 @@ Olá pessoal. Este repositório tem por objetivo apresentar o conteúdo de SQL. 
 
 ### Módulo 0: Configurando o ambiente de desenvolvimento
 
-### Vídeo 0: Configuração do Ambiente de Desenvolvimento: Databricks
-
 #### 1. Introdução ao Databricks
 - **O que é Databricks?**
   - Databricks é uma plataforma unificada de análise de dados, criada pelos fundadores do Apache Spark.
