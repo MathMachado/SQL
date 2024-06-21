@@ -1,7 +1,5 @@
 # Vídeo 1: Introdução ao SQL
 
-## Duração: 10 minutos
-
 ## Conteúdo:
 
 ### Parte 1: O que é SQL?
