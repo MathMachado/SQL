@@ -1,15 +1,13 @@
-%sql
 -- Passo 1: Criação da Tabela "Produtos"
 CREATE TABLE IF NOT EXISTS Produtos (
     ID INT,
     Nome STRING,
     Categoria STRING,
-    Preço FLOAT,
+    Preco FLOAT,
     Quantidade INT
-)
+);
 
 -- Passo 2: Inserção de Dados na Tabela "Produtos"
-%sql
 INSERT INTO Produtos VALUES
     (1, 'Caneta', 'Escritório', 1.50, 100),
     (2, 'Lápis', 'Escritório', 0.80, 150),
@@ -21,8 +19,7 @@ INSERT INTO Produtos VALUES
     (8, 'Régua', 'Escritório', 1.20, 110),
     (9, 'Tesoura', 'Escritório', 3.00, 40),
     (10, 'Agenda', 'Papelaria', 12.00, 60)
+;
 
 -- Passo 3: Consulta de Dados da Tabela "Produtos"
-%sql
 SELECT * FROM Produtos
-
