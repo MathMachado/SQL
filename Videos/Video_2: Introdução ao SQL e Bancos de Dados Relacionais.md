@@ -1,4 +1,4 @@
-# Vídeo 1: Introdução ao SQL
+# Vídeo 2: Introdução ao SQL e Bancos de Dados Relacionais
 
 ## Conteúdo:
 
