@@ -1,239 +1,70 @@
 # SQL
-Olá pessoal. Este repositório tem por objetivo apresentar o conteúdo de SQL. Teremos um total de 10 horas de conteúdo, com exemplos práticos e exercícios no final de cada vídeo, totalizando 60 vídeos de 10 minutos cada. Cada vídeo incluirá uma parte teórica, exemplos práticos e exercícios para reforçar o aprendizado. Segue o plano detalhado:
+Olá alunos, sejam bem vindos ao curso de SQL. Neste repositório do Github você vai encontrar todo o conteúdo do curso de SQL, com exemplos práticos e exercícios no final de cada vídeo. Com esses vídeos, vocês (os alunos) terão uma base sólida nos conceitos e comandos mais importantes do SQL, permitindo-lhes começar a usar SQL de forma eficaz e eficiente, cobrindo os aspectos essenciais para consultas, manipulação de dados, e integração de múltiplas tabelas. 
+Segue o plano detalhado (passível de mudanças):
 
 ## Plano de Treinamento de SQL - 60 Vídeos de 10 Minutos
 
-### Módulo 0: Configurando o ambiente de desenvolvimento
-#### 1. Introdução ao Databricks
-#### 2. Principais Características do Databricks
-#### 3. Configurando o Databricks
-#### 4. Exemplos Práticos e Exercícios
+Claro, aqui está o plano de 10 vídeos com os assuntos adicionais distribuídos:
 
-### Módulo 1: Introdução e Conceitos Básicos
-#### Vídeo 1: Introdução ao SQL
+### Módulo 1: Configurando o Ambiente de Desenvolvimento
+#### Vídeo 1: Introdução ao Databricks e Configuração
 - **Conteúdo:**
-  - O que é SQL?
-  - História do SQL.
-  - Aplicações do SQL.
-  - **Exercícios:** Pesquisa sobre bancos de dados relacionais.
+  - Introdução ao Databricks, principais características e configuração.
+  - **Exercícios:** Configuração do ambiente Databricks.
 
-#### Vídeo 2: Bancos de Dados Relacionais
+### Módulo 2: Introdução e Conceitos Básicos
+#### Vídeo 2: Introdução ao SQL e Bancos de Dados Relacionais
 - **Conteúdo:**
-  - Conceitos de tabelas, registros, e colunas.
+  - O que é SQL? História e aplicações.
+  - Conceitos de tabelas, registros e colunas.
   - Exemplos de RDBMS.
-  - **Exercícios:** Identificação de componentes em exemplos de bancos de dados.
+  - **Exercícios:** Pesquisa sobre bancos de dados relacionais e identificação de componentes.
 
-#### Vídeo 3: Estrutura de um Banco de Dados
+### Módulo 3: Criando e Gerenciando Bancos de Dados e Tabelas
+#### Vídeo 3: Criando Bancos de Dados e Tabelas
 - **Conteúdo:**
-  - Estrutura básica de um banco de dados.
-  - **Exercícios:** Desenho de um esquema simples de banco de dados.
-
-### Módulo 2: Criando e Gerenciando Bancos de Dados e Tabelas
-#### Vídeo 4: Criando Bancos de Dados
-- **Conteúdo:**
-  - Comando `CREATE DATABASE`.
-  - **Exercícios:** Criação de diferentes bancos de dados.
-
-#### Vídeo 5: Criando Tabelas
-- **Conteúdo:**
-  - Comando `CREATE TABLE`.
+  - Comandos `CREATE DATABASE` e `CREATE TABLE`.
   - Tipos de dados comuns.
-  - **Exercícios:** Criação de tabelas com diferentes esquemas.
+  - **Exercícios:** Criação de bancos de dados e tabelas com diferentes esquemas.
 
-#### Vídeo 6: Modificando Tabelas
+### Módulo 4: Inserindo e Modificando Dados
+#### Vídeo 4: Inserindo Dados Simples e Múltiplas Linhas
 - **Conteúdo:**
-  - Comando `ALTER TABLE`.
-  - **Exercícios:** Alteração de tabelas existentes.
+  - Comando `INSERT INTO` para inserção de dados simples e múltiplas linhas.
+  - **Exercícios:** Inserção de dados em tabelas.
 
-#### Vídeo 7: Excluindo Tabelas e Bancos de Dados
+#### Vídeo 5: Modificando e Excluindo Tabelas
 - **Conteúdo:**
-  - Comando `DROP TABLE` e `DROP DATABASE`.
-  - **Exercícios:** Exclusão de tabelas e bancos de dados criados anteriormente.
+  - Comandos `ALTER TABLE` e `DROP TABLE`.
+  - **Exercícios:** Modificação e exclusão de tabelas.
 
-### Módulo 3: Inserindo Dados
-#### Vídeo 8: Inserindo Dados Simples
+### Módulo 5: Consultando Dados
+#### Vídeo 6: Selecionando, Filtrando e Removendo Duplicatas
 - **Conteúdo:**
-  - Comando `INSERT INTO`.
-  - **Exercícios:** Inserção de dados em tabelas simples.
+  - Comandos `SELECT`, `WHERE` e `DISTINCT`.
+  - **Exercícios:** Seleção, filtragem e remoção de registros duplicados em tabelas simples.
 
-#### Vídeo 9: Inserindo Múltiplas Linhas
+#### Vídeo 7: Ordenando e Limitando Resultados
 - **Conteúdo:**
-  - Inserção de múltiplas linhas de dados.
-  - **Exercícios:** Inserção de múltiplas linhas em uma tabela.
+  - Comandos `ORDER BY` e `LIMIT`.
+  - **Exercícios:** Ordenação e limitação de resultados em consultas.
 
-#### Vídeo 10: Inserção em Colunas Específicas
+### Módulo 6: Funções de Agregação e Agrupamento
+#### Vídeo 8: Funções de Agregação, Agrupamento e Filtragem de Grupos
 - **Conteúdo:**
-  - Inserção em colunas específicas.
-  - **Exercícios:** Inserção de dados em colunas específicas.
+  - Funções `COUNT`, `SUM`, `AVG`, `MIN`, `MAX`.
+  - Comandos `GROUP BY` e `HAVING`.
+  - **Exercícios:** Uso de funções de agregação, agrupamento e filtragem de grupos de resultados.
 
-### Módulo 4: Consultando Dados
-##### Vídeo 11: Selecionando Dados
+### Módulo 7: Junções entre Tabelas (JOINS)
+#### Vídeo 9: Introdução aos Joins e Inner Join
 - **Conteúdo:**
-  - Comando `SELECT`.
-  - **Exercícios:** Seleção de dados de tabelas simples.
-
-#### Vídeo 12: Utilizando Alias
-- **Conteúdo:**
-  - Utilização de alias com `AS`.
-  - **Exercícios:** Aplicação de alias em consultas.
-
-#### Vídeo 13: Filtrando Dados com WHERE
-- **Conteúdo:**
-  - Filtros básicos com `WHERE`.
-  - **Exercícios:** Aplicação de filtros em consultas.
-
-#### Vídeo 14: Operadores em WHERE
-- **Conteúdo:**
-  - Operadores comuns (`=`, `<>`, `<`, `>`, `<=`, `>=`).
-  - **Exercícios:** Uso de operadores em filtros.
-
-#### Vídeo 15: Ordenando Resultados
-- **Conteúdo:**
-  - Comando `ORDER BY`.
-  - **Exercícios:** Ordenação de resultados em consultas.
-
-#### Vídeo 16: Limitando Resultados
-- **Conteúdo:**
-  - Comando `LIMIT`.
-  - **Exercícios:** Limitação de resultados retornados.
-
-#### Vídeo 17: Removendo Duplicatas
-- **Conteúdo:**
-  - Comando `DISTINCT`.
-  - **Exercícios:** Remoção de duplicatas em consultas.
-
-### Módulo 5: Funções de Agregação e Agrupamento
-#### Vídeo 18: Função COUNT
-- **Conteúdo:**
-  - Função `COUNT`.
-  - **Exercícios:** Contagem de registros em tabelas.
-
-#### Vídeo 19: Funções SUM e AVG
-- **Conteúdo:**
-  - Funções `SUM` e `AVG`.
-  - **Exercícios:** Cálculo de soma e média de valores.
-
-#### Vídeo 20: Funções MIN e MAX
-- **Conteúdo:**
-  - Funções `MIN` e `MAX`.
-  - **Exercícios:** Identificação de valores mínimo e máximo.
-
-#### Vídeo 21: Agrupando Resultados
-- **Conteúdo:**
-  - Comando `GROUP BY`.
-  - **Exercícios:** Agrupamento de resultados por colunas específicas.
-
-#### Vídeo 22: Filtrando Grupos com HAVING
-- **Conteúdo:**
-  - Comando `HAVING`.
-  - **Exercícios:** Filtragem de grupos de resultados.
-
-### Módulo 6: Junções entre Tabelas (JOINS)
-#### Vídeo 23: Introdução aos Joins
-- **Conteúdo:**
-  - Conceito de joins.
-  - **Exercícios:** Exemplos simples de joins.
-
-#### Vídeo 24: Inner Join
-- **Conteúdo:**
-  - Comando `INNER JOIN`.
+  - Conceito de joins e comando `INNER JOIN`.
   - **Exercícios:** Realização de inner joins entre tabelas.
 
-#### Vídeo 25: Left Join
+### Módulo 8: Subconsultas, Atualizando e Deletando Dados
+#### Vídeo 10: Subconsultas, Atualizando e Deletando Dados
 - **Conteúdo:**
-  - Comando `LEFT JOIN`.
-  - **Exercícios:** Realização de left joins entre tabelas.
-
-#### Vídeo 26: Right Join
-- **Conteúdo:**
-  - Comando `RIGHT JOIN`.
-  - **Exercícios:** Realização de right joins entre tabelas.
-
-#### Vídeo 27: Exemplos Práticos de Joins
-- **Conteúdo:**
-  - Exemplos práticos combinando diferentes tipos de joins.
-  - **Exercícios:** Aplicação de joins em cenários reais.
-
-### Módulo 7: Subconsultas e Consultas Aninhadas
-#### Vídeo 28: O que são Subconsultas?
-- **Conteúdo:**
-  - Definição de subconsultas.
-  - **Exercícios:** Identificação de subconsultas em exemplos.
-
-#### Vídeo 29: Subconsultas no SELECT
-- **Conteúdo:**
-  - Uso de subconsultas no `SELECT`.
-  - **Exercícios:** Criação de subconsultas em consultas `SELECT`.
-
-#### Vídeo 30: Subconsultas no WHERE
-- **Conteúdo:**
-  - Uso de subconsultas no `WHERE`.
-  - **Exercícios:** Criação de subconsultas em condições `WHERE`.
-
-#### Vídeo 31: Subconsultas no FROM
-- **Conteúdo:**
-  - Uso de subconsultas no `FROM`.
-  - **Exercícios:** Criação de subconsultas em cláusulas `FROM`.
-
-### Módulo 8: Atualizando e Deletando Dados
-#### Vídeo 32: Atualizando Dados
-- **Conteúdo:**
-  - Comando `UPDATE`.
-  - **Exercícios:** Atualização de registros em tabelas.
-
-#### Vídeo 33: Atualizando Registros Específicos
-- **Conteúdo:**
-  - Filtros no comando `UPDATE`.
-  - **Exercícios:** Atualização de registros específicos.
-
-#### Vídeo 34: Deletando Dados
-- **Conteúdo:**
-  - Comando `DELETE`.
-  - **Exercícios:** Remoção de registros de tabelas.
-
-#### Vídeo 35: Removendo Registros Específicos
-- **Conteúdo:**
-  - Filtros no comando `DELETE`.
-  - **Exercícios:** Deleção de registros específicos.
-
-#### Vídeo 36: Integridade Referencial
-- **Conteúdo:**
-  - Conceito de integridade referencial.
-  - **Exercícios:** Manutenção da integridade referencial em operações de atualização e deleção.
-
-### Módulo 9: Visões (Views)
-#### Vídeo 37: Introdução às Visões
-- **Conteúdo:**
-  - Conceito de visões.
-  - **Exercícios:** Identificação de situações para uso de visões.
-
-#### Vídeo 38: Criando Visões
-- **Conteúdo:**
-  - Comando `CREATE VIEW`.
-  - **Exercícios:** Criação de visões para diferentes consultas.
-
-#### Vídeo 39: Utilizando Visões
-- **Conteúdo:**
-  - Utilização de visões em consultas.
-  - **Exercícios:** Uso de visões para simplificar consultas complexas.
-
-### Módulo 10: Índices
-
-
-#### Vídeo 40: Introdução aos Índices
-- **Conteúdo:**
-  - Conceito de índices.
-  - **Exercícios:** Identificação de benefícios e usos de índices.
-
-#### Vídeo 41: Criando Índices
-- **Conteúdo:**
-  - Comando `CREATE INDEX`.
-  - **Exercícios:** Criação de índices em tabelas.
-
-#### Vídeo 42: Considerações sobre Índices
-- **Conteúdo:**
-  - Cuidados ao usar índices.
-  - **Exercícios:** Análise de impacto de índices na performance.
-
-## Conclusão
-Com este plano de 60 vídeos de 10 minutos cada, incluindo exemplos práticos e exercícios, os participantes terão uma base sólida e prática em SQL. O treinamento será interativo e reforçará o aprendizado de forma eficaz, cobrindo os comandos mais frequentes e importantes para manipulação e consulta de dados.
+  - Subconsultas no `SELECT`, `WHERE` e `FROM`.
+  - Comandos `UPDATE` e `DELETE`.
+  - **Exercícios:** Criação de subconsultas e atualização e remoção de registros em tabelas.
