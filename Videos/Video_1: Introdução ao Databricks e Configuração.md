@@ -1,4 +1,4 @@
-# 1. Introdução ao Databricks
+# 1. Introdução ao Databricks e Configuração
 - **O que é Databricks?**
   - Databricks é uma plataforma unificada de análise de dados, criada pelos fundadores do Apache Spark.
   - Combina o poder do processamento distribuído com a simplicidade de uso de notebooks interativos.
