@@ -1,5 +1,4 @@
-# Vídeo 2: Introdução ao SQL e Bancos de Dados Relacionais
-
+# Vídeo 3: Criando Bancos de Dados e Tabelas
 ## Conteúdo:
 
 ### Parte 1: O que é SQL?
