@@ -18,18 +18,6 @@ O `INNER JOIN` combina registros de duas tabelas com base em uma condição de c
 
 Vamos usar a tabela `clientes_video3` e criar uma nova tabela `pedidos` para demonstrar o uso do `INNER JOIN`.
 
-## Estrutura da Tabela `clientes_video3`
-
-```sql
-CREATE OR REPLACE TABLE clientes_video3 (
-    ID INT,
-    Nome STRING,
-    idade INT,
-    cidade STRING,
-    email STRING
-);
-```
-
 ## Criação da Tabela `pedidos`
 
 ```sql
