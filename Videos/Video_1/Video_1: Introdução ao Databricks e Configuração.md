@@ -53,6 +53,10 @@
   - Criação de um notebook e execução de um comando SQL básico.
 
 - **Exercícios:**
+  - Fazer uma pesquisa sobe o Databricks:
+    - Quais as principais características do Databricks?
+    - Para que ou em qual áreas o Databricks é utilizado?
+    - Quais os principais concorrentes do Databricks?
   - Criar um workspace no Databricks.
   - Configurar um cluster e criar um notebook.
   - Conectar-se a um banco de dados fictício e realizar uma consulta simples.
