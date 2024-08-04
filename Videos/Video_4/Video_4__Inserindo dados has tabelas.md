@@ -1,29 +1,29 @@
 # Vídeo 4: Inserindo Dados Simples e Múltiplas Linhas
 
-## **1. Introdução ao Comando INSERT INTO**
-O comando `INSERT INTO` é utilizado para adicionar novos registros em uma tabela existente. Existem duas formas principais de usar este comando:
+## 1. Introdução ao Comando INSERT INTO
+O comando `INSERT INTO` é bastante direto e é usado para adicionar novos registros a uma tabela existente. Temos duas maneiras principais de usar esse comando:
 
-- Inserção de uma única linha.
-- Inserção de múltiplas linhas.
+- Para inserir uma única linha.
+- Para inserir múltiplas linhas.
 
-## **2. Inserindo uma Única Linha**
-Para inserir uma única linha em uma tabela, utilizamos a seguinte sintaxe:
+## 2. Inserindo uma Única Linha
+Para adicionar uma única linha em uma tabela, usamos a seguinte sintaxe:
 
 ```sql
 INSERT INTO nome_da_tabela (coluna1, coluna2, coluna3, ...)
 VALUES (valor1, valor2, valor3, ...);
 ```
 
-**Exemplo:**
-Suponha que temos uma tabela chamada `clientes` com as colunas `id`, `nome`, `idade` e `cidade`. Vamos inserir um novo cliente nesta tabela.
+**Exemplo Prático:**
+Imaginemos que temos uma tabela chamada `clientes` com as colunas `id`, `nome`, `idade` e `cidade`. Vamos adicionar um novo cliente nessa tabela.
 
 ```sql
 INSERT INTO clientes (id, nome, idade, cidade)
 VALUES (1, 'João Silva', 28, 'São Paulo');
 ```
 
-## **3. Inserindo Múltiplas Linhas**
-Para inserir múltiplas linhas de uma vez, utilizamos uma sintaxe similar, mas com várias cláusulas `VALUES`.
+## 3. Inserindo Múltiplas Linhas
+Para adicionar várias linhas de uma só vez, a sintaxe é similar, mas utilizamos múltiplas cláusulas `VALUES`.
 
 ```sql
 INSERT INTO nome_da_tabela (coluna1, coluna2, coluna3, ...)
@@ -33,8 +33,8 @@ VALUES
 ...;
 ```
 
-**Exemplo:**
-Vamos inserir três novos clientes na tabela `clientes` de uma só vez.
+**Exemplo Prático:**
+Vamos adicionar três novos clientes na tabela `clientes` de uma única vez.
 
 ```sql
 INSERT INTO clientes (id, nome, idade, cidade)
@@ -44,7 +44,7 @@ VALUES
 (4, 'Ana Costa', 29, 'Curitiba');
 ```
 
-## **4. Exercícios Práticos**
+## 4. Exercícios Práticos
 
 **Exercício 1: Inserção Simples**
 1. Crie uma tabela chamada `produtos` com as colunas `id`, `nome`, `preco` e `quantidade`.
@@ -79,6 +79,5 @@ VALUES
 (4, 'Monitor', 800.00, 30);
 ```
 
-## **5. Conclusão**
-O comando `INSERT INTO` é uma ferramenta essencial para adicionar novos dados às suas tabelas SQL. Saber como inserir tanto dados simples quanto múltiplas linhas de uma vez pode melhorar significativamente sua eficiência no gerenciamento de dados.
-
+## 5. Conclusão
+O comando `INSERT INTO` é fundamental para adicionar novos dados às suas tabelas SQL. Saber como inserir tanto dados simples quanto múltiplas linhas de uma vez pode melhorar muito sua eficiência no gerenciamento de dados.
