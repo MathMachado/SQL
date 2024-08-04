@@ -35,6 +35,33 @@ WITH ClientesSP AS (
 SELECT * FROM ClientesSP;
 ```
 
+**Exemplo mais compexo com CTE**
+Neste exemplo, vamos:
+
+- Criar uma CTE para selecionar clientes de São Paulo.
+- Criar outra CTE para calcular o valor total dos pedidos por cliente.
+- Combinar essas CTEs para produzir um resultado final que mostra os clientes de São Paulo e o valor total dos pedidos deles.
+
+```sql
+WITH ClientesSP AS (
+    SELECT ID, Nome, idade, cidade, email
+    FROM clientes_video3
+    WHERE cidade = 'São Paulo'
+),
+TotalPedidosPorCliente AS (
+    SELECT ClienteID, SUM(Valor) AS TotalValor
+    FROM pedidos
+    GROUP BY ClienteID
+),
+ClientesSPComPedidos AS (
+    SELECT ClientesSP.Nome, ClientesSP.idade, ClientesSP.email, TotalPedidosPorCliente.TotalValor
+    FROM ClientesSP
+    LEFT JOIN TotalPedidosPorCliente ON ClientesSP.ID = TotalPedidosPorCliente.ClienteID
+)
+SELECT * FROM ClientesSPComPedidos;
+```
+
+
 # 2. Comando UPDATE
 
 O comando `UPDATE` é usado para modificar registros existentes em uma tabela.
@@ -109,6 +136,14 @@ WHERE cidade = 'São Paulo';
 DELETE FROM clientes_video3
 WHERE idade < 25;
 ```
+
+## Exercício 4: CTE's complexas
+
+- Crie uma consulta que:
+
+    - Seleciona todos os clientes que têm mais de 30 anos.
+    - Calcula a média de valor dos pedidos para cada cliente.
+    - Combina essas informações para exibir os clientes que têm mais de 30 anos e a média de valor de seus pedidos.
 
 # Conclusão
 
