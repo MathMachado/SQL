@@ -1,4 +1,4 @@
-# Vídeo 4: Comando ALTER TABLE com a Tabela `clientes_video3`
+# Vídeo 4: Modificando a estrutura das tabelas
 
 ## Introdução ao Comando ALTER TABLE
 
