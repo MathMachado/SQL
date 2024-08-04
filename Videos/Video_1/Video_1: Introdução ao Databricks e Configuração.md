@@ -26,7 +26,7 @@
 
 # 3. Configurando o Databricks
 ### Configurando uma conta Community Edition
-  - Siga as isntruções do documento Videos/Video_1/Configurar_Databricks.md.
+  - Siga as isntruções do documento [Como configurar o Databricks Community Edition]([https://github.com/MathMachado/SQL/blob/113f7b908dfec0aeec4256c4c7e8f854f39cecbd/Videos/Video_1/Configurar_Databricks.md](https://github.com/MathMachado/SQL/blob/dc4a6a0bfce47d5ee33d21e1791292618efa4c71/Videos/Video_1/Como%20configurar%20o%20Databricks%20Community%20Edition.md))
   
 - **Passo 2: Configurar um Workspace**
   - Após o login, crie um workspace, que é o ambiente onde você realizará suas análises.
