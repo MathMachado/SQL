@@ -1,4 +1,4 @@
--- Passo 1: Criação da Tabela "Produtos"
+-- Passo 1: Criação da Tabela "Produtos_exemplo1"
 CREATE TABLE IF NOT EXISTS Produtos (
     ID INT,
     Nome STRING,
@@ -7,8 +7,8 @@ CREATE TABLE IF NOT EXISTS Produtos (
     Quantidade INT
 );
 
--- Passo 2: Inserção de Dados na Tabela "Produtos"
-INSERT INTO Produtos VALUES
+-- Passo 2: Inserção de Dados na Tabela "Produtos_exemplo1"
+INSERT INTO Produtos_exemplo1 VALUES
     (1, 'Caneta', 'Escritório', 1.50, 100),
     (2, 'Lápis', 'Escritório', 0.80, 150),
     (3, 'Borracha', 'Escritório', 0.50, 200),
@@ -21,5 +21,5 @@ INSERT INTO Produtos VALUES
     (10, 'Agenda', 'Papelaria', 12.00, 60)
 ;
 
--- Passo 3: Consulta de Dados da Tabela "Produtos"
-SELECT * FROM Produtos
+-- Passo 3: Consulta de Dados da Tabela "Produtos_exemplo1"
+SELECT * FROM Produtos_exemplo1
