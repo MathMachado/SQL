@@ -5,23 +5,21 @@ Para configurar uma conta gratuita na Databricks (Databricks Community Edition),
 
 ### Passo 2: Iniciar o Processo de Inscrição
 1. No topo da página inicial, do lado direito, clique em "Try Databricks".
-2. Você será redirecionado para a página de inscrição. Encontre e clique na opção "Get Started for Free".
+2. Você será redirecionado para a página/formulário de inscrição. Preencha os campos necessários:
+   - **First Name**: Seu primeiro nome.
+   - **Last Name**: Seu sobrenome.
+   - **Email**: Um endereço de email válido.
+   - **Company**: Pode deixar em branco ou inserir "Self" se estiver criando a conta para uso pessoal.
+   - **Job Title**: Seu título profissional (pode ser deixado em branco).
+   - **Country**: Selecione seu país de residência. No caso, selecione Brazil
+   - Ao responder à pergunta "What do you want to build and run with Databricks", selecione todas as caixinhas.
 
 ### Passo 3: Escolher a Community Edition
 1. Na página de inscrição, role para baixo até encontrar a seção "Databricks Community Edition".
 2. Clique no botão "Get Started for Free" dentro desta seção.
 
 ### Passo 4: Criar uma Conta
-1. Você será direcionado para um formulário de inscrição.
-2. Preencha os campos necessários:
-   - **First Name**: Seu primeiro nome.
-   - **Last Name**: Seu sobrenome.
-   - **Email**: Um endereço de email válido.
-   - **Company**: Pode deixar em branco ou inserir "Self" se estiver criando a conta para uso pessoal.
-   - **Job Title**: Seu título profissional (pode ser deixado em branco).
-   - **Country**: Selecione seu país de residência.
-3. Marque a opção "I’m not a robot" para completar a verificação Captcha.
-4. Clique em "Sign Up".
+
 
 ### Passo 5: Confirmar o Email
 1. Após preencher o formulário e clicar em "Sign Up", você receberá um email de confirmação da Databricks.
