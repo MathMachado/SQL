@@ -50,6 +50,7 @@
 # 4. Exemplos Práticos e Exercícios
 - **Exemplo Prático:**
   - Criação de um cluster simples.
+  - Criamos o workspace.
   - Criação de um notebook e execução de um comando SQL básico.
 
 - **Exercícios:**
