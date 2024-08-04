@@ -1,105 +1,123 @@
-# Video 4: Modificando e Excluindo Tabelas
+# Vídeo 4: Comando ALTER TABLE
 
-## 1. Comando ALTER TABLE
-O comando `ALTER TABLE` é utilizado para modificar a estrutura de uma tabela existente. Podemos usá-lo para:
+## Introdução ao Comando ALTER TABLE
 
-- Adicionar colunas
-- Modificar colunas existentes
-- Excluir colunas
-- Renomear colunas ou a tabela
+O comando `ALTER TABLE` é uma ferramenta poderosa no SQL que permite modificar a estrutura de uma tabela existente. Este comando é muito útil quando precisamos fazer alterações em uma tabela sem perder os dados já armazenados. Com o `ALTER TABLE`, podemos:
 
-**Sintaxe Básica:**
-```sql
-ALTER TABLE nome_da_tabela
-ADD nome_da_coluna tipo_de_dado;
+1. **Adicionar colunas**: Quando precisamos armazenar informações adicionais.
+2. **Modificar colunas existentes**: Para alterar o tipo de dados ou outras propriedades de uma coluna.
+3. **Excluir colunas**: Remover colunas que não são mais necessárias.
+4. **Renomear colunas ou a tabela**: Para tornar os nomes mais descritivos ou ajustar a nomenclatura de acordo com novas convenções.
 
-ALTER TABLE nome_da_tabela
-MODIFY nome_da_coluna novo_tipo_de_dado;
+Vamos explorar cada uma dessas operações com exemplos práticos e, em seguida, faremos alguns exercícios para consolidar o aprendizado.
 
-ALTER TABLE nome_da_tabela
-DROP COLUMN nome_da_coluna;
+## 1. Adicionar Colunas
 
-ALTER TABLE nome_da_tabela
-RENAME TO novo_nome_da_tabela;
-```
+Adicionar uma coluna em uma tabela existente é útil quando você precisa armazenar informações adicionais. 
 
-**Exemplo Prático:**
-Vamos modificar uma tabela chamada `clientes`.
-
-- Adicionar uma nova coluna chamada `email`:
-  ```sql
-  ALTER TABLE clientes
-  ADD email VARCHAR(255);
-  ```
-
-- Modificar o tipo de dado da coluna `idade` para `SMALLINT`:
-  ```sql
-  ALTER TABLE clientes
-  MODIFY idade SMALLINT;
-  ```
-
-- Excluir a coluna `cidade`:
-  ```sql
-  ALTER TABLE clientes
-  DROP COLUMN cidade;
-  ```
-
-- Renomear a tabela `clientes` para `clientes_vip`:
-  ```sql
-  ALTER TABLE clientes
-  RENAME TO clientes_vip;
-  ```
-
-## 2. Comando DROP TABLE
-O comando `DROP TABLE` é utilizado para excluir uma tabela do banco de dados. Esse comando remove a tabela e todos os dados contidos nela permanentemente.
-
-**Sintaxe Básica:**
-```sql
-DROP TABLE nome_da_tabela;
-```
-
-**Exemplo Prático:**
-Vamos excluir a tabela `clientes_vip` que criamos anteriormente.
-```sql
-DROP TABLE clientes_vip;
-```
-
-## 3. Exercícios Práticos
-
-**Exercício 1: Modificação de Tabelas**
-1. Crie uma tabela chamada `produtos` com as colunas `id`, `nome`, `preco` e `quantidade`.
-2. Adicione uma coluna `categoria` do tipo `VARCHAR(50)`.
-3. Modifique o tipo de dado da coluna `preco` para `DECIMAL(10, 2)`.
-4. Exclua a coluna `quantidade`.
-5. Renomeie a tabela `produtos` para `estoque`.
+**Exemplo:**
 
 ```sql
-CREATE TABLE produtos (
-    id INT,
-    nome VARCHAR(100),
-    preco FLOAT,
-    quantidade INT
-);
-
-ALTER TABLE produtos
-ADD categoria VARCHAR(50);
-
-ALTER TABLE produtos
-MODIFY preco DECIMAL(10, 2);
-
-ALTER TABLE produtos
-DROP COLUMN quantidade;
-
-ALTER TABLE produtos
-RENAME TO estoque;
+ALTER TABLE Produtos
+ADD COLUMNS (Descricao STRING);
 ```
 
-**Exercício 2: Exclusão de Tabelas**
-1. Exclua a tabela `estoque` que você modificou no exercício anterior.
+Neste exemplo, estamos adicionando uma nova coluna chamada `Descricao` do tipo `STRING` à tabela `Produtos`.
+
+## 2. Modificar Colunas Existentes
+
+Modificar uma coluna pode incluir alterar o tipo de dado ou renomear a coluna. 
+
+**Exemplo de alteração do tipo de dado:**
 
 ```sql
-DROP TABLE estoque;
+ALTER TABLE Produtos
+ALTER COLUMN Preco SET DATA TYPE DOUBLE;
 ```
 
-## 4. Conclusão
-Os comandos `ALTER TABLE` e `DROP TABLE` são fundamentais para a manutenção e gestão de tabelas em um banco de dados. Eles permitem modificar a estrutura das tabelas conforme necessário e excluir tabelas que não são mais úteis. Praticar essas operações ajuda a consolidar o conhecimento e a confiança no uso dessas ferramentas poderosas.
+Neste exemplo, estamos alterando o tipo de dado da coluna `Preco` para `DOUBLE`.
+
+## 3. Excluir Colunas
+
+Excluir colunas é útil para remover dados que não são mais necessários. 
+
+**Exemplo:**
+
+```sql
+ALTER TABLE Produtos
+DROP COLUMN Quantidade;
+```
+
+Neste exemplo, estamos removendo a coluna `Quantidade` da tabela `Produtos`.
+
+## 4. Renomear Colunas ou a Tabela
+
+Renomear colunas ou a tabela ajuda a manter uma nomenclatura consistente e descritiva. 
+
+**Exemplo de renomear uma coluna:**
+
+```sql
+ALTER TABLE Produtos
+RENAME COLUMN Nome TO NomeProduto;
+```
+
+Neste exemplo, estamos renomeando a coluna `Nome` para `NomeProduto`.
+
+**Exemplo de renomear a tabela:**
+
+```sql
+ALTER TABLE Produtos
+RENAME TO NovosProdutos;
+```
+
+Neste exemplo, estamos renomeando a tabela `Produtos` para `NovosProdutos`.
+
+## Exercícios Práticos
+
+Vamos praticar os conceitos aprendidos com alguns exercícios:
+
+1. **Adicionar uma coluna**:
+   - Adicione uma coluna chamada `DataDeValidade` do tipo `DATE` na tabela `Produtos`.
+
+   ```sql
+   ALTER TABLE Produtos
+   ADD COLUMNS (DataDeValidade DATE);
+   ```
+
+2. **Modificar uma coluna existente**:
+   - Altere o tipo de dado da coluna `Preco` de `FLOAT` para `DOUBLE`.
+
+   ```sql
+   ALTER TABLE Produtos
+   ALTER COLUMN Preco SET DATA TYPE DOUBLE;
+   ```
+
+3. **Excluir uma coluna**:
+   - Remova a coluna `Categoria` da tabela `Produtos`.
+
+   ```sql
+   ALTER TABLE Produtos
+   DROP COLUMN Categoria;
+   ```
+
+4. **Renomear uma coluna**:
+   - Renomeie a coluna `Nome` para `NomeProduto`.
+
+   ```sql
+   ALTER TABLE Produtos
+   RENAME COLUMN Nome TO NomeProduto;
+   ```
+
+5. **Renomear a tabela**:
+   - Renomeie a tabela `Produtos` para `InventarioProdutos`.
+
+   ```sql
+   ALTER TABLE Produtos
+   RENAME TO InventarioProdutos;
+   ```
+
+## Conclusão
+
+O comando `ALTER TABLE` é uma ferramenta essencial para a modificação da estrutura das tabelas em SQL. Com ele, podemos adicionar, modificar, excluir e renomear colunas e tabelas de forma eficiente e sem perder os dados existentes. Pratique os exercícios fornecidos para consolidar seu entendimento e aumentar sua proficiência no uso do comando `ALTER TABLE`.
+
+Se você tiver dúvidas ou precisar de mais exemplos, deixe um comentário no vídeo!
