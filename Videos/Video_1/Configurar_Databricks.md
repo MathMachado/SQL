@@ -4,7 +4,7 @@ Para configurar uma conta gratuita na Databricks (Databricks Community Edition),
 1. Abra seu navegador de internet e vá até o site da Databricks: [Databricks](https://databricks.com/).
 
 ### Passo 2: Iniciar o Processo de Inscrição
-1. No topo da página inicial, clique em "Try Databricks".
+1. No topo da página inicial, do lado direito, clique em "Try Databricks".
 2. Você será redirecionado para a página de inscrição. Encontre e clique na opção "Get Started for Free".
 
 ### Passo 3: Escolher a Community Edition
