@@ -18,7 +18,7 @@ Para configurar uma conta gratuita na Databricks (Databricks Community Edition),
 
 ### Passo 3: Escolher a Community Edition
 1. Você será direcionado para a tela abaixo:
-![ Databricks_Community_Edition](Videos/Figuras/signing_up_Databricks.png)
+[Videos/Figuras/signing_up_Databricks.png](https://github.com/MathMachado/SQL/blob/14a7116a2bb208ff14cbd0a478f75f2efeef0647/Videos/Figuras/signing_up_Databricks.png)
 
 
 
