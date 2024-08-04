@@ -59,7 +59,7 @@ UPDATE clientes_video3
 SET nova_idade = idade;
 ```
 
-*** Remover a Coluna Antiga
+**Remover a Coluna Antiga**
 Remova a coluna antiga:
 
 ```sql
