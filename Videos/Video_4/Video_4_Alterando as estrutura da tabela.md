@@ -29,13 +29,58 @@ Neste exemplo, estamos adicionando uma nova coluna chamada `email` do tipo `STRI
 Modificar uma coluna pode incluir alterar o tipo de dado ou renomear a coluna. 
 
 **Exemplo de alteração do tipo de dado:**
+*** Atualizar a Versão do Protocolo da Tabela
+
+Primeiro, atualize a versão do protocolo da tabela clientes_video3:
+
+```sql
+ALTER TABLE clientes_video3 
+SET TBLPROPERTIES (
+  'delta.minReaderVersion' = '2',
+  'delta.minWriterVersion' = '5'
+);
+
+*** Ativar o Column Mapping
+Depois de atualizar o protocolo, ative o Column Mapping:
+
+```sql
+ALTER TABLE clientes_video3 
+SET TBLPROPERTIES ('delta.columnMapping.mode' = 'name');
+```
+
+*** Adicionar uma Nova Coluna
+Adicione uma nova coluna com o tipo de dado desejado:
 
 ```sql
 ALTER TABLE clientes_video3
-ALTER COLUMN idade SET DATA TYPE SMALLINT;
+ADD COLUMNS (nova_idade SMALLINT);
 ```
 
-Neste exemplo, estamos alterando o tipo de dado da coluna `idade` para `SMALLINT`.
+
+*** Copiar os Dados da Coluna Antiga para a Nova Coluna
+Copie os dados da coluna antiga para a nova coluna:
+
+```sq
+UPDATE clientes_video3
+SET nova_idade = idade;
+```
+
+*** Remover a Coluna Antiga
+Remova a coluna antiga:
+
+```sql
+ALTER TABLE clientes_video3
+DROP COLUMN idade;
+```
+
+*** Renomear a Nova Coluna para o Nome da Coluna Original
+Renomeie a nova coluna para o nome da coluna original:
+
+```sql
+ALTER TABLE clientes_video3
+RENAME COLUMN nova_idade TO idade;
+```
+
 
 ## 3. Excluir Colunas
 
