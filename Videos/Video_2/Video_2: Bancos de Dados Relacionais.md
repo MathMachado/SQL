@@ -56,7 +56,7 @@ SQL é usado em diversas áreas, incluindo:
 - **Exercício 1: Identificação de Componentes em Exemplos de Bancos de Dados**
 
 ### Exemplo de Exercício:
-1. **Tabela Fictícia: Produtos**
+1. **Tabela Fictícia: Produtos_exemplo1**
    - **Colunas:**
      - `ID` (INT)
      - `Nome` (VARCHAR)
