@@ -28,9 +28,7 @@ Neste exemplo, estamos adicionando uma nova coluna chamada `email` do tipo `STRI
 
 Modificar uma coluna pode incluir alterar o tipo de dado ou renomear a coluna. 
 
-**Exemplo de alteração do tipo de dado:**
-
-*** Atualizar a Versão do Protocolo da Tabela
+**Atualizar a Versão do Protocolo da Tabela**
 
 ```sql
 ALTER TABLE clientes_video3 
@@ -39,14 +37,14 @@ SET TBLPROPERTIES (
   'delta.minWriterVersion' = '5'
 );
 
-*** Ativar o Column Mapping
+**Ativar o Column Mapping**
 
 ```sql
 ALTER TABLE clientes_video3 
 SET TBLPROPERTIES ('delta.columnMapping.mode' = 'name');
 ```
 
-*** Adicionar uma Nova Coluna
+**Adicionar uma Nova Coluna**
 
 ```sql
 ALTER TABLE clientes_video3
@@ -54,7 +52,7 @@ ADD COLUMNS (nova_idade SMALLINT);
 ```
 
 
-*** Copiar os Dados da Coluna Antiga para a Nova Coluna
+**Copiar os Dados da Coluna Antiga para a Nova Coluna**
 
 ```sq
 UPDATE clientes_video3
@@ -69,7 +67,7 @@ ALTER TABLE clientes_video3
 DROP COLUMN idade;
 ```
 
-*** Renomear a Nova Coluna para o Nome da Coluna Original
+**Renomear a Nova Coluna para o Nome da Coluna Original**
 
 ```sql
 ALTER TABLE clientes_video3
