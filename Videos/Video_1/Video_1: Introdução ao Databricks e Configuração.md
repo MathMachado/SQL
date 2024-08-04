@@ -25,10 +25,30 @@
   - Controle de acesso baseado em função (RBAC).
 
 # 3. Configurando o Databricks
-- **Passo 1: Criar uma Conta Databricks**
-  - Acesse o site do Databricks ([https://databricks.com/](https://community.cloud.databricks.com/login.html)).
-  - Clique em "Get started for free" para criar uma conta gratuita.
-  - Preencha as informações necessárias e verifique seu email para ativar a conta.
+Para configurar uma conta gratuita na Databricks (Databricks Community Edition), siga estes passos detalhados:
+
+3.1. Abra seu navegador de internet e vá até o site da Databricks: [Databricks](https://databricks.com/).
+3.2. No topo da página inicial, do lado direito, clique em "Try Databricks".
+3.3. Você será redirecionado para a página/formulário de inscrição. Preencha os campos necessários:
+   - **First Name**: Seu primeiro nome.
+   - **Last Name**: Seu sobrenome.
+   - **Email**: Um endereço de email válido.
+   - **Company**: Pode deixar em branco ou inserir "Self" se estiver criando a conta para uso pessoal.
+   - **Job Title**: Seu título profissional (pode ser deixado em branco).
+   - **Country**: Selecione seu país de residência. No caso, selecione Brazil
+   - Ao responder à pergunta "What do you want to build and run with Databricks", selecione todas as caixinhas.
+  
+3.4. Você será direcionado para a tela a seguir:
+[Videos/Figuras/signing_up_Databricks.png](https://github.com/MathMachado/SQL/blob/14a7116a2bb208ff14cbd0a478f75f2efeef0647/Videos/Figuras/signing_up_Databricks.png)
+3.5. Após preencher o formulário e clicar em "Sign Up", você receberá um email de confirmação da Databricks.
+3.6.. Acesse seu email e encontre a mensagem da Databricks.
+3.7. Clique no link de confirmação dentro do email para verificar seu endereço de email.
+3.8. Após clicar no link de confirmação, você será redirecionado para uma página onde deverá criar uma senha para sua conta Databricks.
+3.9. Crie uma senha forte e clique em "Create Account".
+3.10.. Depois de criar a senha, você será automaticamente logado na Databricks Community Edition.
+3.11. A partir deste ponto, você pode começar a explorar a interface do Databricks.
+
+Parabéns! Agora você tem uma conta Databricks Community Edition configurada e pronta para uso.
 
 - **Passo 2: Configurar um Workspace**
   - Após o login, crie um workspace, que é o ambiente onde você realizará suas análises.
