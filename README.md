@@ -49,9 +49,10 @@ Segue o plano detalhado (passível de mudanças):
   - Conceito de joins e comando `INNER JOIN`.
   - **Exercícios:** Realização de inner joins entre tabelas.
 
-## Módulo 8: Subconsultas, Atualizando e Deletando Dados
-### Vídeo 8: Subconsultas, Atualizando e Deletando Dados
+## Módulo 8: CTE, UPDATE e DELETE
+### Vídeo 8: CTE, UPDATE, DELETE
 - **Conteúdo:**
   - Subconsultas no `SELECT`, `WHERE` e `FROM`.
   - Comandos `UPDATE` e `DELETE`.
+  - CTEs.
   - **Exercícios:** Criação de subconsultas e atualização e remoção de registros em tabelas.
