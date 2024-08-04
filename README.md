@@ -24,42 +24,37 @@ Segue o plano detalhado (passível de mudanças):
   - **Exercícios:** Criação de bancos de dados e tabelas com diferentes esquemas.
 
 ## Módulo 4: Inserindo e Modificando Dados
-### Vídeo 4: Inserindo Dados Simples e Múltiplas Linhas
-- **Conteúdo:**
-  - Comando `INSERT INTO` para inserção de dados simples e múltiplas linhas.
-  - **Exercícios:** Inserção de dados em tabelas.
-
-### Vídeo 5: Modificando e Excluindo Tabelas
+### Vídeo 4: Modificando e Excluindo Tabelas
 - **Conteúdo:**
   - Comandos `ALTER TABLE` e `DROP TABLE`.
   - **Exercícios:** Modificação e exclusão de tabelas.
 
 ## Módulo 5: Consultando Dados
-### Vídeo 6: Selecionando, Filtrando e Removendo Duplicatas
+### Vídeo 5: Selecionando, Filtrando e Removendo Duplicatas
 - **Conteúdo:**
   - Comandos `SELECT`, `WHERE` e `DISTINCT`.
   - **Exercícios:** Seleção, filtragem e remoção de registros duplicados em tabelas simples.
 
-### Vídeo 7: Ordenando e Limitando Resultados
+### Vídeo 6: Ordenando e Limitando Resultados
 - **Conteúdo:**
   - Comandos `ORDER BY` e `LIMIT`.
   - **Exercícios:** Ordenação e limitação de resultados em consultas.
 
-## Módulo 6: Funções de Agregação e Agrupamento
-### Vídeo 8: Funções de Agregação, Agrupamento e Filtragem de Grupos
+## Módulo 7: Funções de Agregação e Agrupamento
+### Vídeo 7: Funções de Agregação, Agrupamento e Filtragem de Grupos
 - **Conteúdo:**
   - Funções `COUNT`, `SUM`, `AVG`, `MIN`, `MAX`.
   - Comandos `GROUP BY` e `HAVING`.
   - **Exercícios:** Uso de funções de agregação, agrupamento e filtragem de grupos de resultados.
 
-## Módulo 7: Junções entre Tabelas (JOINS)
-### Vídeo 9: Introdução aos Joins e Inner Join
+## Módulo 8: Junções entre Tabelas (JOINS)
+### Vídeo 8: Introdução aos Joins e Inner Join
 - **Conteúdo:**
   - Conceito de joins e comando `INNER JOIN`.
   - **Exercícios:** Realização de inner joins entre tabelas.
 
-## Módulo 8: Subconsultas, Atualizando e Deletando Dados
-### Vídeo 10: Subconsultas, Atualizando e Deletando Dados
+## Módulo 9: Subconsultas, Atualizando e Deletando Dados
+### Vídeo 9: Subconsultas, Atualizando e Deletando Dados
 - **Conteúdo:**
   - Subconsultas no `SELECT`, `WHERE` e `FROM`.
   - Comandos `UPDATE` e `DELETE`.
