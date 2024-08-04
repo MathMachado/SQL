@@ -1,4 +1,4 @@
-# Vídeo 4: Inserindo Dados Simples e Múltiplas Linhas
+# Vídeo 3: Inserindo Dados Simples e Múltiplas Linhas
 
 ## 1. Introdução ao Comando INSERT INTO
 O comando `INSERT INTO` é bastante direto e é usado para adicionar novos registros a uma tabela existente. Temos duas maneiras principais de usar esse comando:
