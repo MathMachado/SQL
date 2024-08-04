@@ -67,9 +67,9 @@ VALUES (1, 'Notebook', 3500.00, 10);
 
 | id | nome          | preco   | quantidade |
 |----|---------------|---------|------------|
-| 2  | 'Mouse'       | 50.00   | 100        |
-| 3  | 'Teclado'     | 120.00  | 50         |
-| 4  | 'Monitor'     | 800.00  | 30         |
+| 2  | Mouse       | 50.00   | 100        |
+| 3  | Teclado     | 120.00  | 50         |
+| 4  | Monitor     | 800.00  | 30         |
 
 ```sql
 INSERT INTO produtos (id, nome, preco, quantidade)
