@@ -36,6 +36,8 @@ SET TBLPROPERTIES (
   'delta.minReaderVersion' = '2',
   'delta.minWriterVersion' = '5'
 );
+```
+
 
 **Ativar o Column Mapping**
 
