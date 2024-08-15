@@ -56,7 +56,7 @@ SQL é usado em diversas áreas, incluindo:
 - **Exercício 1: Identificação de Componentes em Exemplos de Bancos de Dados**
 
 ### Exemplo de Exercício:
-1. **Tabela Fictícia: Produtos_exemplo1**
+1. **Tabela Fictícia: Produtos**
    - **Colunas:**
      - `ID` (INT)
      - `Nome` (VARCHAR)
@@ -68,12 +68,12 @@ SQL é usado em diversas áreas, incluindo:
     
   Por favor, vá até o Databricks, Notebook ´Video_2.sql´ e tenha sua primeira experiência com o SQL.
 
-2. **Tabela Fictícia: Funcionários**
+2. **Tabela Fictícia: Funcionarios**
    - **Colunas:**
      - `ID` (INT)
      - `Nome` (VARCHAR)
      - `Cargo` (VARCHAR)
-     - `Salário` (DECIMAL)
-     - `Data_Admissão` (DATE)
+     - `Salario` (DECIMAL)
+     - `Data_Admissao` (DATE)
    - **Registro Exemplo:**
      - (1, "Ana Costa", "Analista", 3500.00, "2023-05-10")
