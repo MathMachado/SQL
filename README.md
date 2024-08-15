@@ -1,9 +1,9 @@
-# SQL
+# Curso de SQL
 Olá alunos, sejam bem vindos ao curso de SQL. Neste repositório do Github você vai encontrar todo o conteúdo do curso de SQL, com exemplos práticos e exercícios no final de cada vídeo. Com esses vídeos, vocês (os alunos) terão uma base sólida nos conceitos e comandos mais importantes do SQL, permitindo-lhes começar a usar SQL de forma eficaz e eficiente, cobrindo os aspectos essenciais para consultas, manipulação de dados, e integração de múltiplas tabelas. 
 Segue o plano detalhado (passível de mudanças):
 
 ## Módulo 1: Configurando o Ambiente de Desenvolvimento
-### Vídeo 1: Introdução ao Databricks e Configuração
+### Vídeo 1: Introdução e Configuração do Databricks
 - **Conteúdo:**
   - Introdução ao Databricks, principais características e configuração.
   - **Exercícios:** Configuração do ambiente Databricks.
