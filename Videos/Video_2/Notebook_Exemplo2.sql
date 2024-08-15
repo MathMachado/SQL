@@ -3,8 +3,8 @@ CREATE TABLE IF NOT EXISTS Funcionarios (
     ID INT,
     Nome STRING,
     Cargo STRING,
-    Salário FLOAT,
-    Data_Admissão DATE
+    Salario FLOAT,
+    Data_Admissao DATE
 )
 
 -- Passo 2: Inserção de Dados na Tabela "Funcionários"
