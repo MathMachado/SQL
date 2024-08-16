@@ -52,7 +52,6 @@ Segue o plano detalhado (passível de mudanças):
 ## Módulo 8: CTE, UPDATE e DELETE
 ### Vídeo 8: CTE, UPDATE, DELETE
 - **Conteúdo:**
-  - Subconsultas no `SELECT`, `WHERE` e `FROM`.
+  - CTEs: Subconsultas no `SELECT`, `WHERE` e `FROM`.
   - Comandos `UPDATE` e `DELETE`.
-  - CTEs.
   - **Exercícios:** Criação de subconsultas e atualização e remoção de registros em tabelas.
