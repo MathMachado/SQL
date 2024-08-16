@@ -50,7 +50,7 @@ Segue o plano detalhado (passível de mudanças):
   - **Exercícios:** Realização de inner joins entre tabelas.
 
 ## Módulo 8: CTE, UPDATE e DELETE
-### Vídeo 8: CTE, UPDATE, DELETE
+### Vídeo 8: CTE, UPDATE e DELETE
 - **Conteúdo:**
   - CTEs: Subconsultas no `SELECT`, `WHERE` e `FROM`.
   - Comandos `UPDATE` e `DELETE`.
