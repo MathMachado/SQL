@@ -14,7 +14,13 @@ Para tornar as coisas mais interessantes, vamos adicionar mais 20 registros à t
 
 ### Adicionando Registros à Tabela `clientes`
 
-Primeiro, vamos garantir que a estrutura da tabela está correta:
+Primeiro, vamos garantir que a tabela não existe para não termos um erro no Databricks:
+
+```sql
+DROP TABLE IF EXISTS warehouse.clientes;
+```
+
+Na sequência, criamos a tabela clientes:
 
 ```sql
 CREATE OR REPLACE TABLE clientes (
