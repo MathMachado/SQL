@@ -4,7 +4,7 @@
 
 No SQL, é essencial não só saber como selecionar e manipular dados, mas também como atualizar e excluir registros. Além disso, as Common Table Expressions (CTEs) oferecem uma maneira conveniente e legível de organizar consultas complexas. Neste vídeo, vamos explorar:
 
-1. **CTE (Common Table Expressions)**
+1. **CTE (Common Table Expressions)**: CTE (Common Table Expressions): Subconsultas no SELECT, WHERE e FROM
 2. **Comando UPDATE**
 3. **Comando DELETE**
 
