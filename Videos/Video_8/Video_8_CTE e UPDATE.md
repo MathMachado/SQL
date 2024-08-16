@@ -23,13 +23,13 @@ WITH cte_name AS (
 SELECT * FROM cte_name;
 ```
 
-**Exemplo de CTE com a Tabela `clientes_video3`:**
+**Exemplo de CTE com a Tabela `clientes`:**
 
 Vamos criar uma CTE para selecionar todos os clientes que moram em "São Paulo":
 
 ```sql
 WITH ClientesSP AS (
-    SELECT * FROM clientes_video3
+    SELECT * FROM clientes
     WHERE cidade = 'São Paulo'
 )
 SELECT * FROM ClientesSP;
@@ -45,7 +45,7 @@ Neste exemplo, vamos:
 ```sql
 WITH ClientesSP AS (
     SELECT ID, Nome, idade, cidade, email
-    FROM clientes_video3
+    FROM clientes
     WHERE cidade = 'São Paulo'
 ),
 TotalPedidosPorCliente AS (
@@ -74,12 +74,12 @@ SET column1 = value1, column2 = value2
 WHERE condition;
 ```
 
-**Exemplo de UPDATE com a Tabela `clientes_video3`:**
+**Exemplo de UPDATE com a Tabela `clientes`:**
 
 Vamos atualizar o e-mail de um cliente específico:
 
 ```sql
-UPDATE clientes_video3
+UPDATE clientes
 SET email = 'novo.email@example.com'
 WHERE ID = 1;
 ```
@@ -95,12 +95,12 @@ DELETE FROM table_name
 WHERE condition;
 ```
 
-**Exemplo de DELETE com a Tabela `clientes_video3`:**
+**Exemplo de DELETE com a Tabela `clientes`:**
 
 Vamos excluir um cliente específico da tabela:
 
 ```sql
-DELETE FROM clientes_video3
+DELETE FROM clientes
 WHERE ID = 2;
 ```
 
@@ -112,7 +112,7 @@ WHERE ID = 2;
 
 ```sql
 WITH ClientesMais30 AS (
-    SELECT * FROM clientes_video3
+    SELECT * FROM clientes
     WHERE idade > 30
 )
 SELECT * FROM ClientesMais30;
@@ -123,7 +123,7 @@ SELECT * FROM ClientesMais30;
 - Atualize a cidade para "Rio de Janeiro" de todos os clientes que atualmente moram em "São Paulo".
 
 ```sql
-UPDATE clientes_video3
+UPDATE clientes
 SET cidade = 'Rio de Janeiro'
 WHERE cidade = 'São Paulo';
 ```
@@ -133,7 +133,7 @@ WHERE cidade = 'São Paulo';
 - Exclua todos os clientes que têm idade menor que 25 anos.
 
 ```sql
-DELETE FROM clientes_video3
+DELETE FROM clientes
 WHERE idade < 25;
 ```
 
