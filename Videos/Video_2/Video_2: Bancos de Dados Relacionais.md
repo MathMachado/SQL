@@ -66,7 +66,7 @@ SQL é usado em diversas áreas, incluindo:
    - **Registro Exemplo:**
      - (1, "Caneta", "Escritório", 1.50, 100)
     
-  Por favor, vá até o Databricks, Notebook ´Notebook_Video_2.sql´ e tenha sua primeira experiência com o SQL.
+  Por favor, vá até o Databricks, Notebook ´Notebook_Video2_Exemplo1.sql´ e tenha sua primeira experiência com o SQL.
 
 2. **Tabela Fictícia: Funcionarios**
    - **Colunas:**
