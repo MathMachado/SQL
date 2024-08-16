@@ -2,7 +2,7 @@
 
 ## Introdução
 
-Neste vídeo, vamos explorar comandos e funções essenciais para ordenar, limitar e agregar dados em SQL. Usaremos a tabela `clientes_video3` como referência para os exemplos e exercícios.
+Neste vídeo, vamos explorar comandos e funções essenciais para ordenar, limitar e agregar dados em SQL. Usaremos a tabela `clientes` como referência para os exemplos e exercícios.
 
 # Conteúdo
 
@@ -13,7 +13,7 @@ O comando `ORDER BY` é utilizado para ordenar os resultados de uma consulta em 
 **Exemplo de `ORDER BY` e `LIMIT`:**
 
 ```sql
-SELECT * FROM clientes_video3
+SELECT * FROM clientes
 ORDER BY idade DESC
 LIMIT 5;
 ```
@@ -34,7 +34,7 @@ As funções de agregação são usadas para realizar cálculos em um conjunto d
 
 ```sql
 SELECT COUNT(*), AVG(idade), MIN(idade), MAX(idade)
-FROM clientes_video3;
+FROM clientes;
 ```
 
 Neste exemplo, contamos o número de registros e calculamos a média, o valor mínimo e o valor máximo da coluna `idade`.
@@ -47,7 +47,7 @@ O comando `GROUP BY` é usado para agrupar registros que têm valores idênticos
 
 ```sql
 SELECT cidade, COUNT(*), AVG(idade)
-FROM clientes_video3
+FROM clientes
 GROUP BY cidade;
 ```
 
@@ -60,7 +60,7 @@ Neste exemplo, agrupamos os registros pela coluna `cidade` e contamos o número 
 1. **Ordenar os clientes por nome em ordem ascendente e limitar o resultado aos 10 primeiros registros:**
 
    ```sql
-   SELECT * FROM clientes_video3
+   SELECT * FROM clientes
    ORDER BY Nome ASC
    LIMIT 10;
    ```
@@ -68,7 +68,7 @@ Neste exemplo, agrupamos os registros pela coluna `cidade` e contamos o número 
 2. **Ordenar os clientes pela idade em ordem crescente e limitar o resultado aos 5 primeiros registros:**
 
    ```sql
-   SELECT * FROM clientes_video3
+   SELECT * FROM clientes
    ORDER BY idade ASC
    LIMIT 5;
    ```
@@ -79,7 +79,7 @@ Neste exemplo, agrupamos os registros pela coluna `cidade` e contamos o número 
 
    ```sql
    SELECT cidade, COUNT(*)
-   FROM clientes_video3
+   FROM clientes
    GROUP BY cidade;
    ```
 
@@ -87,7 +87,7 @@ Neste exemplo, agrupamos os registros pela coluna `cidade` e contamos o número 
 
    ```sql
    SELECT cidade, SUM(idade)
-   FROM clientes_video3
+   FROM clientes
    GROUP BY cidade;
    ```
 
@@ -95,7 +95,7 @@ Neste exemplo, agrupamos os registros pela coluna `cidade` e contamos o número 
 
    ```sql
    SELECT cidade, AVG(idade)
-   FROM clientes_video3
+   FROM clientes
    GROUP BY cidade
    ORDER BY AVG(idade) DESC;
    ```
@@ -104,7 +104,7 @@ Neste exemplo, agrupamos os registros pela coluna `cidade` e contamos o número 
 
    ```sql
    SELECT cidade, MIN(idade), MAX(idade)
-   FROM clientes_video3
+   FROM clientes
    GROUP BY cidade;
    ```
 
