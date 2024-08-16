@@ -1,7 +1,7 @@
 ```sql
 WITH ClientesMais30 AS (
     SELECT ID, Nome, idade, cidade, email
-    FROM clientes_video3
+    FROM clientes
     WHERE idade > 30
 ),
 MediaPedidosPorCliente AS (
