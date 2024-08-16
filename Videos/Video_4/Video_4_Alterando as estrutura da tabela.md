@@ -11,18 +11,133 @@ O comando `ALTER TABLE` é uma ferramenta poderosa no SQL que permite modificar 
 
 Vamos explorar cada uma dessas operações com exemplos práticos utilizando a tabela `clientes` e, em seguida, faremos alguns exercícios para consolidar o aprendizado.
 
-## 1. Adicionar Colunas
+## 1. Criar a tabela Clientes
+
+```sql
+CREATE OR REPLACE TABLE clientes (
+    ID INT,
+    NOME STRING,
+    IDADE INT,
+    CIDADE STRING
+);
+```
+
+O próximo passo será inserir alguns dados na tabela `Clientes`:
+```sql
+INSERT INTO clientes (ID, NOME, IDADE, CIDADE) VALUES
+(1, 'Ana', 30, 'São Paulo'),
+(2, 'Bruno', 25, 'Rio de Janeiro'),
+(3, 'Carla', 28, 'Belo Horizonte'),
+(4, 'Diego', 35, 'Curitiba'),
+(5, 'Elena', 40, 'Porto Alegre'),
+(6, 'Fabio', 22, 'Salvador'),
+(7, 'Gabriela', 27, 'Fortaleza'),
+(8, 'Hugo', 33, 'Brasília'),
+(9, 'Isabela', 29, 'Recife'),
+(10, 'João', 31, 'Manaus'),
+
+-- 40 registros para a cidade de São Paulo
+(11, 'Lucas', 25, 'São Paulo'),
+(12, 'Mariana', 32, 'São Paulo'),
+(13, 'Pedro', 29, 'São Paulo'),
+(14, 'Fernanda', 27, 'São Paulo'),
+(15, 'Ricardo', 35, 'São Paulo'),
+(16, 'Juliana', 26, 'São Paulo'),
+(17, 'Gustavo', 31, 'São Paulo'),
+(18, 'Natália', 28, 'São Paulo'),
+(19, 'Thiago', 33, 'São Paulo'),
+(20, 'Amanda', 24, 'São Paulo'),
+(21, 'Felipe', 30, 'São Paulo'),
+(22, 'Camila', 29, 'São Paulo'),
+(23, 'Leandro', 36, 'São Paulo'),
+(24, 'Patrícia', 38, 'São Paulo'),
+(25, 'André', 34, 'São Paulo'),
+(26, 'Larissa', 27, 'São Paulo'),
+(27, 'Vinícius', 32, 'São Paulo'),
+(28, 'Priscila', 29, 'São Paulo'),
+(29, 'Rafael', 33, 'São Paulo'),
+(30, 'Beatriz', 26, 'São Paulo'),
+(31, 'Carlos', 28, 'São Paulo'),
+(32, 'Tatiana', 35, 'São Paulo'),
+(33, 'Rodrigo', 30, 'São Paulo'),
+(34, 'Vanessa', 27, 'São Paulo'),
+(35, 'Bruno', 31, 'São Paulo'),
+(36, 'Renata', 33, 'São Paulo'),
+(37, 'Marcelo', 34, 'São Paulo'),
+(38, 'Gabriel', 29, 'São Paulo'),
+(39, 'Alessandra', 28, 'São Paulo'),
+(40, 'Vitor', 32, 'São Paulo'),
+(41, 'Daniela', 25, 'São Paulo'),
+(42, 'Paulo', 31, 'São Paulo'),
+(43, 'Adriana', 28, 'São Paulo'),
+(44, 'Eduardo', 35, 'São Paulo'),
+(45, 'Simone', 29, 'São Paulo'),
+(46, 'Fernando', 27, 'São Paulo'),
+(47, 'Luana', 30, 'São Paulo'),
+(48, 'Júlio', 32, 'São Paulo'),
+(49, 'Letícia', 34, 'São Paulo'),
+(50, 'Mateus', 26, 'São Paulo'),
+
+-- 10 registros para a cidade de Brasília
+(51, 'Carlos', 29, 'Brasília'),
+(52, 'Sofia', 27, 'Brasília'),
+(53, 'Eduarda', 30, 'Brasília'),
+(54, 'Renan', 33, 'Brasília'),
+(55, 'Luan', 25, 'Brasília'),
+(56, 'Vitória', 29, 'Brasília'),
+(57, 'Arthur', 28, 'Brasília'),
+(58, 'Bianca', 26, 'Brasília'),
+(59, 'Raquel', 31, 'Brasília'),
+(60, 'Wesley', 32, 'Brasília'),
+
+-- 20 registros para a cidade do Rio de Janeiro
+(61, 'Gabriel', 25, 'Rio de Janeiro'),
+(62, 'Marta', 32, 'Rio de Janeiro'),
+(63, 'Otávio', 29, 'Rio de Janeiro'),
+(64, 'Julia', 27, 'Rio de Janeiro'),
+(65, 'Paulo', 33, 'Rio de Janeiro'),
+(66, 'Rosa', 24, 'Rio de Janeiro'),
+(67, 'Sérgio', 30, 'Rio de Janeiro'),
+(68, 'Elaine', 29, 'Rio de Janeiro'),
+(69, 'Rafael', 36, 'Rio de Janeiro'),
+(70, 'Maria', 28, 'Rio de Janeiro'),
+(71, 'Leonardo', 33, 'Rio de Janeiro'),
+(72, 'Clara', 26, 'Rio de Janeiro'),
+(73, 'Anderson', 28, 'Rio de Janeiro'),
+(74, 'Tânia', 35, 'Rio de Janeiro'),
+(75, 'Fábio', 31, 'Rio de Janeiro'),
+(76, 'Helena', 27, 'Rio de Janeiro'),
+(77, 'Renato', 29, 'Rio de Janeiro'),
+(78, 'Ana Paula', 28, 'Rio de Janeiro'),
+(79, 'Flávio', 30, 'Rio de Janeiro'),
+(80, 'Débora', 32, 'Rio de Janeiro'),
+
+-- 5 registros para a cidade de Porto Alegre
+(81, 'Carolina', 28, 'Porto Alegre'),
+(82, 'Giovana', 27, 'Porto Alegre'),
+(83, 'Murilo', 30, 'Porto Alegre'),
+(84, 'Luiz', 29, 'Porto Alegre'),
+(85, 'Suzana', 33, 'Porto Alegre'),
+
+-- 5 registros para a cidade de Salvador
+(86, 'Igor', 24, 'Salvador'),
+(87, 'Tatiane', 26, 'Salvador'),
+(88, 'Marcos', 31, 'Salvador'),
+(89, 'Ana Clara', 28, 'Salvador'),
+(90, 'Roberto', 30, 'Salvador');
+
+```
+
+## 2. Adicionar Colunas
 
 Adicionar uma coluna em uma tabela existente é útil quando você precisa armazenar informações adicionais. 
 
-**Exemplo:**
+**Exemplo:** coluna chamada `email` do tipo `STRING` à tabela `clientes`.
 
 ```sql
 ALTER TABLE clientes
 ADD COLUMNS (email STRING);
 ```
-
-Neste exemplo, estamos adicionando uma nova coluna chamada `email` do tipo `STRING` à tabela `clientes`.
 
 ## 2. Modificar Colunas Existentes
 
@@ -37,7 +152,6 @@ SET TBLPROPERTIES (
   'delta.minWriterVersion' = '5'
 );
 ```
-
 
 **Ativar o Column Mapping**
 
