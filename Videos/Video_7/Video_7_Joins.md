@@ -16,7 +16,7 @@ O `INNER JOIN` combina registros de duas tabelas com base em uma condição de c
 
 # Exemplo de INNER JOIN
 
-Vamos usar a tabela `clientes_video3` e criar uma nova tabela `pedidos` para demonstrar o uso do `INNER JOIN`.
+Vamos usar a tabela `clientes` e criar uma nova tabela `pedidos` para demonstrar o uso do `INNER JOIN`.
 
 ## Criação da Tabela `pedidos`
 
@@ -45,44 +45,44 @@ INSERT INTO pedidos (PedidoID, ClienteID, DataPedido, Valor) VALUES
 **Exemplo de INNER JOIN**:
 
 ```sql
-SELECT clientes_video3.Nome, pedidos.PedidoID, pedidos.DataPedido, pedidos.Valor
-FROM clientes_video3
-INNER JOIN pedidos ON clientes_video3.ID = pedidos.ClienteID;
+SELECT clientes.Nome, pedidos.PedidoID, pedidos.DataPedido, pedidos.Valor
+FROM clientes
+INNER JOIN pedidos ON clientes.ID = pedidos.ClienteID;
 ```
 
-Neste exemplo, estamos combinando as tabelas `clientes_video3` e `pedidos` onde `clientes_video3.ID` corresponde a `pedidos.ClienteID`. O resultado inclui apenas os registros que têm correspondência em ambas as tabelas.
+Neste exemplo, estamos combinando as tabelas `clientes` e `pedidos` onde `clientes.ID` corresponde a `pedidos.ClienteID`. O resultado inclui apenas os registros que têm correspondência em ambas as tabelas.
 
 # Exercícios
 
 ## Exercício 1: Realização de um INNER JOIN Simples
 
-- Combine as tabelas `clientes_video3` e `pedidos` para exibir o nome do cliente, ID do pedido e o valor do pedido.
+- Combine as tabelas `clientes` e `pedidos` para exibir o nome do cliente, ID do pedido e o valor do pedido.
 
 ```sql
-SELECT clientes_video3.Nome, pedidos.PedidoID, pedidos.Valor
-FROM clientes_video3
-INNER JOIN pedidos ON clientes_video3.ID = pedidos.ClienteID;
+SELECT clientes.Nome, pedidos.PedidoID, pedidos.Valor
+FROM clientes
+INNER JOIN pedidos ON clientes.ID = pedidos.ClienteID;
 ```
 
 ## Exercício 2: Filtragem Após o INNER JOIN
 
-- Combine as tabelas `clientes_video3` e `pedidos` para exibir os pedidos feitos por clientes da cidade "São Paulo".
+- Combine as tabelas `clientes` e `pedidos` para exibir os pedidos feitos por clientes da cidade "São Paulo".
 
 ```sql
-SELECT clientes_video3.Nome, pedidos.PedidoID, pedidos.Valor
-FROM clientes_video3
-INNER JOIN pedidos ON clientes_video3.ID = pedidos.ClienteID
-WHERE clientes_video3.cidade = 'São Paulo';
+SELECT clientes.Nome, pedidos.PedidoID, pedidos.Valor
+FROM clientes
+INNER JOIN pedidos ON clientes.ID = pedidos.ClienteID
+WHERE clientes.cidade = 'São Paulo';
 ```
 
 ## Exercício 3: Adicionando Mais Colunas ao INNER JOIN
 
-- Combine as tabelas `clientes_video3` e `pedidos` para exibir o nome do cliente, data do pedido e a idade do cliente.
+- Combine as tabelas `clientes` e `pedidos` para exibir o nome do cliente, data do pedido e a idade do cliente.
 
 ```sql
-SELECT clientes_video3.Nome, pedidos.DataPedido, clientes_video3.idade
-FROM clientes_video3
-INNER JOIN pedidos ON clientes_video3.ID = pedidos.ClienteID;
+SELECT clientes.Nome, pedidos.DataPedido, clientes.idade
+FROM clientes
+INNER JOIN pedidos ON clientes.ID = pedidos.ClienteID;
 ```
 
 # Conclusão
