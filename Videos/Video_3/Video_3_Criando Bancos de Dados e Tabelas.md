@@ -1,5 +1,7 @@
 # Vídeo 3: Inserindo Dados Simples e Múltiplas Linhas
 
+Link do Notebook no Databricks: https://community.cloud.databricks.com/?o=8534892839601329#notebook/3718765456882745
+
 ## 1. Introdução ao Comando INSERT INTO
 O comando `INSERT INTO` é bastante direto e é usado para adicionar novos registros a uma tabela existente. Temos duas maneiras principais de usar esse comando:
 
