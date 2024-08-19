@@ -1,5 +1,7 @@
 # Vídeo 6: Ordenação, Limitação e Funções de Agregação
 
+Link do Notebook no Databricks: https://community.cloud.databricks.com/?o=8534892839601329#notebook/2249540384276140
+
 ## Introdução
 
 Neste vídeo, vamos explorar comandos e funções essenciais para ordenar, limitar e agregar dados em SQL. Usaremos a tabela `clientes` como referência para os exemplos e exercícios.
