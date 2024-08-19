@@ -1,5 +1,7 @@
 # Vídeo 5: Selecionando, Filtrando e Removendo Duplicatas
 
+Link do Notebook no Databricks: https://community.cloud.databricks.com/?o=8534892839601329#notebook/1942009169231968
+
 ## Introdução
 
 No SQL, a capacidade de selecionar, filtrar e remover duplicatas dos dados é essencial para a análise eficiente de grandes conjuntos de dados. Os comandos `SELECT`, `WHERE` e `DISTINCT` são fundamentais para essas operações. 
