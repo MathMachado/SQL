@@ -1,5 +1,7 @@
 # Vídeo 4: Modificando a estrutura das tabelas
 
+Link do Notebook no Databricks: https://community.cloud.databricks.com/?o=8534892839601329#notebook/3357980464914589
+
 ## Introdução ao Comando ALTER TABLE
 
 O comando `ALTER TABLE` é uma ferramenta poderosa no SQL que permite modificar a estrutura de uma tabela existente. Este comando é muito útil quando precisamos fazer alterações em uma tabela sem perder os dados já armazenados. Com o `ALTER TABLE`, podemos:
