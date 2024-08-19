@@ -1,5 +1,7 @@
 # Vídeo 8: CTE, UPDATE, DELETE
 
+Link do Notebook no Databricks: https://community.cloud.databricks.com/?o=8534892839601329#notebook/695221328109665
+
 ## Introdução
 
 No SQL, é essencial não só saber como selecionar e manipular dados, mas também como atualizar e excluir registros. Além disso, as Common Table Expressions (CTEs) oferecem uma maneira conveniente e legível de organizar consultas complexas. Neste vídeo, vamos explorar:
