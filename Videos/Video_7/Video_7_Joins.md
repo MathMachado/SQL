@@ -1,5 +1,7 @@
 # Vídeo 7: Introdução aos Joins e Inner Join
 
+Link do Notebook no Databricks: https://community.cloud.databricks.com/?o=8534892839601329#notebook/1977099235362647
+
 ## Introdução
 
 Joins são uma parte fundamental do SQL, permitindo combinar dados de duas ou mais tabelas com base em uma condição relacionada. O `INNER JOIN` é um dos tipos de joins mais utilizados, retornando apenas os registros que possuem correspondências em ambas as tabelas.
