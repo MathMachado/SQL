@@ -1,4 +1,4 @@
-# Exercicios: Analise os dados da SUSEP.
+# Exercicios: Análise de dados da SUSEP.
 
 1. Importação e Preparação de Dados:
    - Questão: Como você importaria os arquivos CSV do 2º semestre de 2020 para uma plataforma como o Databricks usando SQL? Descreva os passos necessários para garantir que os dados sejam carregados corretamente e estejam prontos para análise.
