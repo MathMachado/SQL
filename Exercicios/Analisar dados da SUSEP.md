@@ -1,4 +1,6 @@
 # Exercicios: Análise de dados da SUSEP.
+## Instruções:
+- Acesse o site da SUSEP (https://www2.susep.gov.br/menuestatistica/Autoseg/principal.aspx); do lado direito você vai encontrar vários dados sobre seguros de automóveis. Faça o download dos dados referente ao 2º semestre de 2020. O arquivo ZIP contém vários arquivos menores no formato CSV.
 
 1. Importação e Preparação de Dados:
    - Questão: Como você importaria os arquivos CSV do 2º semestre de 2020 para uma plataforma como o Databricks usando SQL? Descreva os passos necessários para garantir que os dados sejam carregados corretamente e estejam prontos para análise.
