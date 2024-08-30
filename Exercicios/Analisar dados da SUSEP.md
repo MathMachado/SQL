@@ -26,6 +26,7 @@
 
 7. Análise de Sinistros:
    - Questão: Qual seria a consulta SQL para descobrir a média de sinistros (`numSinistros`) por região no arquivo `SinReg`? O que esses dados revelam sobre a frequência de sinistros em diferentes regiões?
+   - Questão: Qual a média de indenizações levando em consideração o valor das indenizações (`indenizacoes`) e o número de sinistros (`numSinistros`)? 
    - Objetivo: Analisar padrões de sinistralidade geográfica.
 
 8. Interpretação dos Dados:
