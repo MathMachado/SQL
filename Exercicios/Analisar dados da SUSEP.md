@@ -23,7 +23,7 @@ def criar_view_temporaria(nome_tabela):
     
     # Exibindo as primeiras 10 linhas da view temporária
     print(f"\nTabela: {nome_tabela}")
-    spark.sql(f"SELECT * FROM {nome_tabela} LIMIT 10").show()
+    spark.sql(f"SELECT * FROM {nome_tabela} LIMIT 10").display()
 ```
 
 Para executar a função, utilize os comandos abaixo:
