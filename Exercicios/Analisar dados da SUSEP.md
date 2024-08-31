@@ -2,6 +2,50 @@
 ## Instruções:
 - Acesse o site da SUSEP (https://www2.susep.gov.br/menuestatistica/Autoseg/principal.aspx); do lado direito você vai encontrar vários dados sobre seguros de automóveis. Faça o download dos dados referente ao 2º semestre de 2020. O arquivo ZIP contém vários arquivos menores no formato CSV.
 
+- Abaixo, eu disponibilizo a função para ler os arquivos CSV:
+
+```python
+%python
+
+def criar_view_temporaria(nome_tabela):
+    # Construindo o caminho do arquivo CSV com base no nome da tabela
+    caminho_csv = f"dbfs:/FileStore/{nome_tabela}.csv"
+    
+    # Leitura do arquivo CSV usando PySpark
+    df = spark.read.format("csv") \
+        .option("header", "true") \
+        .option("inferSchema", "true") \
+        .option("sep", ';') \
+        .load(caminho_csv)
+    
+    # Criando uma view temporária com o nome especificado
+    df.createOrReplaceTempView(nome_tabela)
+    
+    # Exibindo as primeiras 10 linhas da view temporária
+    print(f"\nTabela: {nome_tabela}")
+    spark.sql(f"SELECT * FROM {nome_tabela} LIMIT 10").show()
+```
+
+Para executar a função, utilize os comandos abaixo:
+
+```python
+%python
+criar_view_temporaria(nome_tabela="auto_cau")
+criar_view_temporaria(nome_tabela="auto_cat")
+criar_view_temporaria(nome_tabela="auto_cep")
+criar_view_temporaria(nome_tabela="auto_cidade")
+criar_view_temporaria(nome_tabela="auto_cob")
+criar_view_temporaria(nome_tabela="auto_idade")
+criar_view_temporaria(nome_tabela="auto_reg")
+criar_view_temporaria(nome_tabela="auto_sexo")
+criar_view_temporaria(nome_tabela="auto2_grupo")
+criar_view_temporaria(nome_tabela="auto2_vei")
+criar_view_temporaria(nome_tabela="PremReg")
+criar_view_temporaria(nome_tabela="arq_casco_comp")
+criar_view_temporaria(nome_tabela="arq_casco3_comp")
+criar_view_temporaria(nome_tabela="arq_casco4_comp")
+```
+
 1. Importação e Preparação de Dados:
    - Questão: Como você importaria os arquivos CSV do 2º semestre de 2020 para uma plataforma como o Databricks usando SQL? Descreva os passos necessários para garantir que os dados sejam carregados corretamente e estejam prontos para análise.
    - Objetivo: Avaliar a compreensão sobre importação e preparação de dados.
