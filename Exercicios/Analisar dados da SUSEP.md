@@ -44,6 +44,7 @@ criar_view_temporaria(nome_tabela="PremReg")
 criar_view_temporaria(nome_tabela="arq_casco_comp")
 criar_view_temporaria(nome_tabela="arq_casco3_comp")
 criar_view_temporaria(nome_tabela="arq_casco4_comp")
+criar_view_temporaria(nome_tabela="SinReg")
 ```
 
 1. Importação e Preparação de Dados:
