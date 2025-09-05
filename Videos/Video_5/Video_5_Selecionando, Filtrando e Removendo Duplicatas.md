@@ -133,11 +133,11 @@ Vamos praticar os conceitos aprendidos com alguns exercícios:
 
 #### O Conceito: O que é uma "Janela" de Dados?
 
-Pense em uma consulta SQL tradicional com `GROUP BY`. Se você calcular a média de salários por cargo (`SELECT Cargo, AVG(Salario) FROM Colaboradores GROUP BY Cargo`), você perde a informação individual de cada Colaboradores. O resultado mostra apenas o cargo e a média, colapsando todas as linhas de funcionários em uma só por cargo.
+Pense em uma consulta SQL tradicional com `GROUP BY`. Se você calcular a média de salários por cargo (`SELECT Cargo, AVG(Salario) FROM Colaboradores GROUP BY Cargo`), você perde a informação individual de cada Colaboradores. O resultado mostra apenas o cargo e a média, colapsando todas as linhas de colaboradores em uma só por cargo.
 
 As **Window Functions** resolvem esse problema.
 
-Imagine que, para cada linha da sua tabela (cada funcionário), você pudesse abrir uma "janela" para olhar as linhas vizinhas (outros Colaboradores) e fazer um cálculo. Essa "janela" pode ser o conjunto de todos os colaboradores, ou apenas os colaboradores do mesmo cargo, ou os funcionários admitidos no mesmo ano, etc.
+Imagine que, para cada linha da sua tabela (cada funcionário), você pudesse abrir uma "janela" para olhar as linhas vizinhas (outros Colaboradores) e fazer um cálculo. Essa "janela" pode ser o conjunto de todos os colaboradores, ou apenas os colaboradores do mesmo cargo, ou os colaboradores admitidos no mesmo ano, etc.
 
 A principal vantagem é esta: **você realiza cálculos complexos sobre um conjunto de linhas, mas o resultado é adicionado em uma nova coluna, sem destruir ou agrupar os dados originais.** Cada linha individual é preservada.
 
@@ -271,7 +271,7 @@ INSERT INTO Colaboradores (ID_Colaborador, Nome, Departamento, Cargo, Regiao, Sa
 
 #### EXEMPLO 1: Ranking de Salários com `RANK()` e `DENSE_RANK()`
 
-  * **Objetivo:** Nosso primeiro desafio é simples: criar um ranking de todos os funcionários, do que ganha mais para o que ganha menos.
+  * **Objetivo:** Nosso primeiro desafio é simples: criar um ranking de todos os colaboradores, do que ganha mais para o que ganha menos.
 
   * **Sintaxe e Execução:**
 
@@ -290,7 +290,7 @@ INSERT INTO Colaboradores (ID_Colaborador, Nome, Departamento, Cargo, Regiao, Sa
     Observe as duas novas colunas, `Rank_Salario` e `Dense_Rank_Salario`.
 
       * A cláusula `OVER (ORDER BY Salario DESC)` diz ao SQL: "Olhe para todos os salários, ordene-os do maior para o menor, e então aplique a função de ranking".
-      * Note que há funcionários com salários iguais, como `César Vieira` e `Karina Oliveira` (ambos com 4300.00).
+      * Note que há colaboradores com salários iguais, como `César Vieira` e `Karina Oliveira` (ambos com 4300.00).
           * `RANK()`: Ambos recebem o rank 5, mas o próximo funcionário (com salário de 4200.00) recebe o rank 7. A posição 6 foi "pulada" para compensar o empate.
           * `DENSE_RANK()`: Ambos recebem o rank 5, e o próximo funcionário recebe o rank 6. Não há pulos, o que é útil para criar classificações contínuas.
 
@@ -342,13 +342,13 @@ INSERT INTO Colaboradores (ID_Colaborador, Nome, Departamento, Cargo, Regiao, Sa
 
       * Aqui, usamos uma função de agregação (`AVG`) como uma Window Function.
       * A "janela" é novamente definida por `PARTITION BY Cargo`. Para um funcionário que é 'Analista', a janela inclui todos os outros 'Analistas'. O SQL calcula a média de salário *apenas dessa janela* e a exibe na linha do funcionário.
-      * Você verá que todos os funcionários do cargo 'Gerente' têm o mesmo valor na coluna `Media_Salarial_Do_Cargo`, que é a média de salário de todos os gerentes. O mesmo vale para os outros cargos. Isso tudo sem usar `GROUP BY` e perdendo a linha do `Nome`\!
+      * Você verá que todos os colaboradores do cargo 'Gerente' têm o mesmo valor na coluna `Media_Salarial_Do_Cargo`, que é a média de salário de todos os gerentes. O mesmo vale para os outros cargos. Isso tudo sem usar `GROUP BY` e perdendo a linha do `Nome`\!
 
 -----
 
 #### EXEMPLO 4: Acessando Dados de Linhas Vizinhas com `LAG()`
 
-  * **Objetivo:** Ordenar os funcionários pela data de admissão e descobrir qual era o salário do funcionário contratado imediatamente antes do funcionário atual.
+  * **Objetivo:** Ordenar os colaboradores pela data de admissão e descobrir qual era o salário do funcionário contratado imediatamente antes do funcionário atual.
 
   * **Sintaxe e Execução:**
 
@@ -402,13 +402,13 @@ INSERT INTO Colaboradores (ID_Colaborador, Nome, Departamento, Cargo, Regiao, Sa
 
 Agora que vimos os principais padrões de uso das Window Functions, é sua vez de praticar. Tente resolver os seguintes problemas usando a tabela `Colaboradores`:
 
-1.  **"Liste os funcionários e adicione uma coluna mostrando o salário do funcionário mais novo de seu mesmo cargo."**
+1.  **"Liste os colaboradores e adicione uma coluna mostrando o salário do funcionário mais novo de seu mesmo cargo."**
     *(Dica: Você precisa ordenar por data de admissão dentro de cada cargo. Qual função permite "pegar" um valor específico de uma janela ordenada?)*
 
 2.  **"Calcule, para cada funcionário, a diferença percentual de seu salário em relação à média de seu cargo."**
     *(Dica: Você já sabe como calcular a média do cargo. A fórmula para a diferença percentual é `(Valor - Média) / Média`.)*
 
-3.  **"Encontre os 3 funcionários admitidos mais recentemente em cada cargo."**
+3.  **"Encontre os 3 colaboradores admitidos mais recentemente em cada cargo."**
     *(Dica: Primeiro, crie um ranking de admissão dentro de cada cargo. Depois, como você pode filtrar uma consulta baseada no resultado de uma window function? Talvez você precise de uma subconsulta ou CTE.)*
 
 Tente resolver e, quando estiver pronto, posso mostrar as soluções e explicar o raciocínio por trás de cada uma delas.
