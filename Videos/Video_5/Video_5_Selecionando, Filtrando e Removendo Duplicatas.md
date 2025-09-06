@@ -39,7 +39,7 @@ Agora, vamos adicionar 20 registros com diferentes valores para cada coluna.
 ### Inserindo Registros
 
 ```sql
-INSERT INTO clientes (ID, Nome, idade, cidade, salario, email) VALUES
+INSERT INTO clientes (ID, Nome, idade, cidade, email) VALUES
 (1, 'Ana Silva', 28, 'São Paulo', 'ana.silva@example.com'),
 (2, 'Bruno Santos', 35, 'Rio de Janeiro', 'bruno.santos@example.com'),
 (3, 'Carla Dias', 22, 'Belo Horizonte', 'carla.dias@example.com'),
