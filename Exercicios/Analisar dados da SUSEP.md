@@ -1,6 +1,7 @@
 # Exercicios: Análise de dados da SUSEP.
 ## Instruções:
 - Acesse o site da SUSEP (https://www2.susep.gov.br/menuestatistica/Autoseg/principal.aspx); do lado direito você vai encontrar vários dados sobre seguros de automóveis. Faça o download dos dados referente ao 2º semestre de 2020. O arquivo ZIP contém vários arquivos menores no formato CSV.
+- Entregue um relatório com suas análises, assim como os scripts devidamente comentados. Envie uma cópia do trabalho para o Professor Bruno e o Professor Nelio.
 
 - Abaixo, eu disponibilizo a função para ler os arquivos CSV:
 
